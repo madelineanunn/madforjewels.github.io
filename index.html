@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Mad For Jewels – Hand-crafted Jewelry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Hand-crafted jewelry that makes you shine."/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Mad<span>For</span>Jewels</a>
+      <nav>
+        <ul>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Jewelry that tells <span class="highlight">your</span> story</h1>
+      <p>Hand-crafted with love for every sparkle in your life.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section id="shop">
+    <div class="container">
+      <h2>Featured Pieces</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/placeholder-ring.jpg" alt="Gold ring"/>
+          <h3>Stellar Ring</h3>
+          <p>$79</p>
+          <button class="add-to-cart" data-price="79">Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/placeholder-ring.jpg" alt="Silver necklace"/>
+          <h3>Luna Necklace</h3>
+          <p>$62</p>
+          <button class="add-to-cart" data-price="62">Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/placeholder-ring.jpg" alt="Rose-gold bracelet"/>
+          <h3>Sunbeam Bracelet</h3>
+          <p>$48</p>
+          <button class="add-to-cart" data-price="48">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are two sisters who turned a passion for gemstones into Mad For Jewels. Every piece is ethically sourced and meticulously finished in our small studio.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:hello@madforjewels.shop">hello@madforjewels.shop</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2024 Mad For Jewels. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Cart drawer (simple) -->
+  <aside id="cart-drawer">
+    <button id="close-cart">×</button>
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0</span></p>
+  </aside>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

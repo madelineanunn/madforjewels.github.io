@@ -1,0 +1,47 @@
+/* Reset & basics */
+*{margin:0;padding:0;box-sizing:border-box;font-family:Helvetica,Arial,sans-serif;}
+body{color:#222;background:#fafafa;line-height:1.6;}
+.container{max-width:1100px;margin:auto;padding:0 1rem;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+
+/* Header */
+header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05);}
+header .container{display:flex;align-items:center;justify-content:space-between;padding:1rem;}
+.logo{font-size:1.5rem;font-weight:700;color:#d63384;}
+.logo span{color:#212529;}
+nav ul{display:flex;gap:1.5rem;list-style:none;}
+nav a{color:#212529;font-weight:500;}
+nav a:hover{color:#d63384;}
+
+/* Hero */
+#hero{background:url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;color:#fff;text-align:center;padding:6rem 1rem;}
+#hero h1{font-size:2.5rem;margin-bottom:.5rem;}
+.highlight{color:#ffccd5;}
+.btn{background:#d63384;color:#fff;padding:.75rem 1.5rem;border:none;border-radius:4px;font-size:1rem;cursor:pointer;transition:.3s;}
+.btn:hover{background:#b52d70;}
+
+/* Shop */
+#shop{padding:4rem 1rem;}
+#shop h2{text-align:center;margin-bottom:2rem;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;}
+.card{background:#fff;border:1px solid #eee;border-radius:6px;overflow:hidden;text-align:center;padding-bottom:1rem;}
+.card img{height:200px;object-fit:cover;}
+.card h3{margin:.75rem 0 .25rem;}
+.card p{font-weight:600;margin-bottom:.75rem;}
+.add-to-cart{background:#d63384;color:#fff;border:none;padding:.5rem 1rem;border-radius:4px;cursor:pointer;}
+.add-to-cart:hover{background:#b52d70;}
+
+/* About / Contact */
+#about,#contact{padding:3rem 1rem;background:#fff;}
+#about{background:#f8f9fa;}
+
+/* Footer */
+footer{background:#212529;color:#fff;text-align:center;padding:1rem 0;font-size:.875rem;}
+
+/* Cart drawer */
+#cart-drawer{position:fixed;top:0;right:-300px;width:300px;height:100%;background:#fff;box-shadow:-2px 0 8px rgba(0,0,0,.15);padding:1rem;transition:right .3s;}
+#cart-drawer.open{right:0;}
+#close-cart{background:none;border:none;font-size:1.5rem;position:absolute;top:1rem;right:1rem;cursor:pointer;}
+#cart-items{list-style:none;margin-bottom:1rem;}
+#cart-items li{display:flex;justify-content:space-between;margin-bottom:.5rem;}
