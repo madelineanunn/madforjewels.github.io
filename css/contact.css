@@ -1,0 +1,93 @@
+
+body#contact-page {
+  background-color: #f4f4f4;
+  color: #111;
+  line-height: 1.7;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: #666;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+section:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  color: #222;
+}
+
+.link-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;    
+  margin-top: 1rem;
+}
+
+.link-list li a {
+  font-size: 1.5rem;
+  color: #444;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-list li a:hover {
+  color: #ff6699;
+}
+
+.link-list a:hover {
+  color: #000;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
